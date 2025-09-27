@@ -1,0 +1,28 @@
+/* home.component.css */
+
+.content {
+  padding: 20px;
+}
+
+.albums-by-genre {
+  margin-top: 20px; /* Espacio entre la tabla y el componente hijo */
+}
+
+.albums-table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+mat-header-cell, mat-cell {
+  padding: 10px;
+  text-align: left;
+}
+
+mat-table {
+  margin-bottom: 20px; /* Separación entre la tabla y el siguiente contenido */
+}

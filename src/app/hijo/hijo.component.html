@@ -1,0 +1,23 @@
+<h2>Álbumes por Género</h2>
+
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let genero of GeneroList">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ genero }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div *ngIf="getAlbumsByGenre(genero).length > 0">
+      <ul>
+        <li *ngFor="let album of getAlbumsByGenre(genero)">
+          {{ album.nombre }} - {{ album.artista }}
+        </li>
+      </ul>
+    </div>
+
+    <div *ngIf="getAlbumsByGenre(genero).length === 0">
+      <p>No hay álbumes en este género.</p>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

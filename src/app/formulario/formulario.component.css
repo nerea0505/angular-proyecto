@@ -1,0 +1,53 @@
+/* Contenedor del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  /* Alinea los elementos a la izquierda */
+  gap: 20px; /* Espacio entre los elementos del formulario */
+  margin-bottom: 20px; /* Añade margen en la parte inferior del formulario */
+  max-width: 500px; /* Añade un ancho máximo para el formulario */
+  margin: 0 auto; /* Centra el formulario en la página */
+  padding: 20px; /* Añade espacio interior al formulario */
+  border-radius: 8px; /* Bordes redondeados para el formulario */
+  background-color: #f9f9f9; /* Fondo suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Título del formulario */
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo para los campos de formulario */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Estilo para las etiquetas */
+.mat-label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Estilo para los inputs */
+input, select {
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background-color: #fff; /* Fondo blanco para inputs */
+  transition: border-color 0.3s; /* Transición suave para los bordes */
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #3f51b5; /* Color de borde al enfocar */
+}
